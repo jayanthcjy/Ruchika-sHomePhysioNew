@@ -11,21 +11,31 @@ const HeroSection = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight">
-                Say Goodbye to{" "}
-                <span className="text-primary">Acute Pain</span>
+                Expert Physiotherapy{" "}
+                <span className="text-primary">At Your Doorstep</span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg">
-                Experience expert physiotherapy treatment with our certified professionals. 
-                Get back to your active lifestyle with personalized therapy sessions.
+                Experience professional physiotherapy treatment by Dr. Rutika in the comfort of your home. 
+                Personalized care and rehabilitation services that come to you.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="accent" size="lg" className="text-lg px-8 py-6">
-                Enquire Now
+              <Button 
+                variant="accent" 
+                size="lg" 
+                className="text-lg px-8 py-6"
+                onClick={() => window.open(`https://wa.me/918600970446`, '_blank')}
+              >
+                Book Home Visit
               </Button>
-              <Button variant="accent-outline" size="lg" className="text-lg px-8 py-6">
-                Learn More
+              <Button 
+                variant="accent-outline" 
+                size="lg" 
+                className="text-lg px-8 py-6"
+                onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                Our Services
               </Button>
             </div>
 

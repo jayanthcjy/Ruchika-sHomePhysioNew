@@ -12,12 +12,12 @@ const Footer = () => {
   ];
 
   const services = [
-    "Neck Pain Treatment",
-    "Back Pain Relief",
+    "Home Visit Physiotherapy",
+    "Neck & Back Pain Treatment",
     "Sports Injury Recovery",
     "Post-Surgery Rehabilitation",
-    "Manual Therapy",
-    "Exercise Therapy",
+    "Home Exercise Programs",
+    "Geriatric Physiotherapy",
   ];
 
   return (
@@ -31,21 +31,26 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-accent" />
-                <a href="mailto:info@physioclinic.com" className="hover:text-accent transition-colors">
-                  info@physioclinic.com
-                </a>
+                <span className="hover:text-accent transition-colors">
+                  Contact via WhatsApp
+                </span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-accent" />
-                <a href="tel:+919876543210" className="hover:text-accent transition-colors">
-                  +91 98765 43210
+                <a 
+                  href="https://wa.me/918600970446" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:text-accent transition-colors"
+                >
+                  +91 86009 70446 (WhatsApp)
                 </a>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-accent mt-0.5" />
                 <div>
-                  <p>123 Health Street, Mulund East</p>
-                  <p>Mumbai, Maharashtra 400081</p>
+                  <p>Mumbai, Maharashtra</p>
+                  <p>Home Visit Service</p>
                 </div>
               </div>
             </div>
@@ -80,31 +85,27 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Office Hours */}
+          {/* Visit Hours */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Office Hours</h3>
+            <h3 className="text-lg font-semibold mb-6">Visit Hours</h3>
             <div className="space-y-4">
               <div className="flex items-center gap-3 mb-4">
                 <Clock className="h-5 w-5 text-accent" />
-                <span className="font-medium">Working Hours</span>
+                <span className="font-medium">Home Visit Timings</span>
               </div>
               <div className="space-y-2 text-background/80">
                 <div className="flex justify-between">
-                  <span>Monday - Friday</span>
-                  <span>9:00 AM - 8:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Saturday</span>
-                  <span>9:00 AM - 6:00 PM</span>
+                  <span>Monday - Saturday</span>
+                  <span>8:00 AM - 8:00 PM</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Sunday</span>
-                  <span>10:00 AM - 4:00 PM</span>
+                  <span>By Appointment</span>
                 </div>
               </div>
               <div className="mt-4 p-3 bg-accent/10 rounded-lg">
                 <p className="text-sm text-accent font-medium">
-                  Emergency consultations available 24/7
+                  Book your home visit through WhatsApp
                 </p>
               </div>
             </div>
@@ -115,7 +116,7 @@ const Footer = () => {
         <div className="border-t border-background/20 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-background/60 text-sm">
-              © 2024 Physio Clinic Mumbai. All rights reserved.
+              © 2024 Dr. Ruchika's Physiotherapy & Rehabilitation. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <a href="#" className="text-background/60 hover:text-accent transition-colors">

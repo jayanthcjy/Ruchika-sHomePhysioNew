@@ -7,49 +7,49 @@ const ServicesSection = () => {
     {
       id: "neck-pain",
       name: "Neck Pain",
-      image: "/placeholder.svg",
-      description: "Comprehensive treatment for cervical spine issues including muscle tension, herniated discs, and nerve compression. Our evidence-based approach combines manual therapy, exercise prescription, and ergonomic education.",
+      image: "https://res.cloudinary.com/dvwzde3vf/image/upload/v1753427389/Trigger_tefvxp.png?auto=format&fit=crop&w=800&q=80",
+      description: "Expert home treatment for cervical spine issues, including muscle tension and nerve compression. Dr. Rutika provides personalized care in the comfort of your home with evidence-based manual therapy and exercise prescription.",
       features: [
-        "Manual cervical spine mobilization",
-        "Targeted strengthening exercises",
-        "Postural correction techniques",
-        "Ergonomic workplace assessment"
+        "At-home cervical spine treatment",
+        "Personalized exercise programs",
+        "Posture correction guidance",
+        "Home ergonomics assessment"
       ]
     },
     {
       id: "back-pain",
       name: "Back Pain",
-      image: "/placeholder.svg",
-      description: "Expert treatment for lower back pain, sciatica, and spinal conditions. We use advanced techniques to restore function and reduce pain for long-term relief.",
+      image: "https://res.cloudinary.com/dvwzde3vf/image/upload/v1753434667/backpain_hwxioc.jpg?auto=format&fit=crop&w=800&q=80",
+      description: "Home-based treatment for lower back pain, sciatica, and spinal conditions. Dr. Rutika brings advanced techniques to your doorstep for effective pain relief and functional improvement.",
       features: [
-        "Spinal mobilization therapy",
-        "Core strengthening programs",
-        "Pain management techniques",
-        "Movement re-education"
+        "Home spinal therapy",
+        "Customized exercise plans",
+        "Pain management at home",
+        "Daily activity modification"
       ]
     },
     {
       id: "sports-injury",
       name: "Sports Injury",
-      image: "/placeholder.svg",
-      description: "Specialized rehabilitation for athletes and active individuals. Get back to your sport stronger and more resilient with our sport-specific treatment protocols.",
+      image: "https://res.cloudinary.com/dvwzde3vf/image/upload/v1753410205/sportsInjury_ducujw.png?auto=format&fit=crop&w=800&q=80",
+      description: "Home-based rehabilitation for sports injuries. Dr. Rutika brings specialized treatment to athletes and active individuals, helping you recover in your own space.",
       features: [
-        "Sport-specific rehabilitation",
-        "Performance enhancement",
-        "Injury prevention programs",
-        "Return-to-sport protocols"
+        "At-home sports rehabilitation",
+        "Performance recovery",
+        "Injury prevention guidance",
+        "Return-to-activity planning"
       ]
     },
     {
       id: "rehabilitation",
       name: "Rehabilitation",
-      image: "/placeholder.svg",
-      description: "Comprehensive post-surgical and post-injury rehabilitation programs designed to restore optimal function and prevent future complications.",
+      image: "https://res.cloudinary.com/dvwzde3vf/image/upload/v1753411680/Rehab_tqgalh.png?auto=format&fit=crop&w=800&q=80",
+      description: "In-home post-surgical and post-injury rehabilitation programs. Dr. Rutika provides comprehensive care at your home, ensuring optimal recovery in a comfortable environment.",
       features: [
-        "Post-surgical recovery",
-        "Functional restoration",
-        "Gait training",
-        "Adaptive equipment training"
+        "Home-based recovery",
+        "Functional improvement",
+        "Movement training",
+        "Home environment adaptation"
       ]
     }
   ];
@@ -62,8 +62,8 @@ const ServicesSection = () => {
             Our Specialized Services
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            We offer comprehensive physiotherapy services tailored to your specific needs. 
-            Our expert team uses the latest techniques and equipment to ensure optimal recovery.
+            Dr. Rutika brings expert physiotherapy services directly to your home. 
+            Experience professional treatment in your comfortable environment with personalized care plans.
           </p>
         </div>
 
@@ -108,17 +108,22 @@ const ServicesSection = () => {
                       </ul>
                     </div>
 
-                    <Button variant="accent" size="lg">
-                      Book Consultation
+                    <Button 
+                      variant="accent" 
+                      size="lg"
+                      onClick={() => window.open(`https://wa.me/918600970446?text=Hi Dr. Rutika, I'm interested in ${service.name} treatment at home.`, '_blank')}
+                    >
+                      Book Home Visit
                     </Button>
                   </div>
 
                   <div className="relative">
-                    <div className="aspect-[4/3] bg-muted rounded-2xl flex items-center justify-center">
-                      <div className="text-center text-muted-foreground">
-                        <div className="text-6xl mb-2">🏥</div>
-                        <p>Treatment Image</p>
-                      </div>
+                    <div className="aspect-[4/3] rounded-2xl overflow-hidden">
+                      <img 
+                        src={service.image} 
+                        alt={`${service.name} treatment`}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   </div>
                 </div>

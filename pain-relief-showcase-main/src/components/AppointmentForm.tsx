@@ -5,14 +5,16 @@ import { useState } from "react";
 const AppointmentForm = () => {
   const [formData, setFormData] = useState({
     name: "",
-    phone: "",
+    location: "",
     date: "",
+    problem: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
+    const whatsappMessage = `Hi Dr. Ruchika,\nI would like to book an appointment:\n\nName: ${formData.name}\nlocation: ${formData.location}\nPreferred Date: ${formData.date}\nProblem: ${formData.problem}`;
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    window.open(`https://wa.me/918600970446?text=${encodedMessage}`, '_blank');
   };
 
   const handleInputChange = (field: string, value: string) => {
@@ -33,7 +35,7 @@ const AppointmentForm = () => {
           </div>
 
           <form onSubmit={handleSubmit} className="bg-background rounded-2xl p-8 shadow-xl">
-            <div className="grid md:grid-cols-3 gap-6 mb-6">
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div className="space-y-2">
                 <label htmlFor="name" className="text-sm font-medium text-foreground">
                   Full Name *
@@ -50,15 +52,15 @@ const AppointmentForm = () => {
               </div>
 
               <div className="space-y-2">
-                <label htmlFor="phone" className="text-sm font-medium text-foreground">
-                  Phone Number *
+                <label htmlFor="location" className="text-sm font-medium text-foreground">
+                  location  *
                 </label>
                 <Input
-                  id="phone"
-                  type="tel"
-                  placeholder="Enter your phone number"
-                  value={formData.phone}
-                  onChange={(e) => handleInputChange("phone", e.target.value)}
+                  id="location"
+                  type="text"
+                  placeholder="Type your location"
+                  value={formData.location}
+                  onChange={(e) => handleInputChange("location", e.target.value)}
                   required
                   className="h-12"
                 />
@@ -77,11 +79,26 @@ const AppointmentForm = () => {
                   className="h-12"
                 />
               </div>
+
+              <div className="space-y-2">
+                <label htmlFor="problem" className="text-sm font-medium text-foreground">
+                  Problem *
+                </label>
+                <Input
+                  id="problem"
+                  type="text"
+                  placeholder="Describe your problem briefly"
+                  value={formData.problem}
+                  onChange={(e) => handleInputChange("problem", e.target.value)}
+                  required
+                  className="h-12"
+                />
+              </div>
             </div>
 
             <div className="text-center">
               <Button type="submit" variant="accent" size="lg" className="px-12 py-6 text-lg">
-                Get Started
+                Book via WhatsApp
               </Button>
             </div>
           </form>

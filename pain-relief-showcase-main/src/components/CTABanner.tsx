@@ -23,7 +23,7 @@ const CTABanner = () => {
             <div className="text-primary-foreground/60 text-sm">
               or call us at{" "}
               <a href="tel:+919876543210" className="text-accent font-semibold hover:underline">
-                +91 98765 43210
+                +91 86009 70446
               </a>
             </div>
           </div>
@@ -34,8 +34,8 @@ const CTABanner = () => {
               <div className="text-sm text-primary-foreground/80">Emergency Support</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-accent mb-1">Free</div>
-              <div className="text-sm text-primary-foreground/80">Initial Consultation</div>
+              <div className="text-2xl font-bold text-accent mb-1">Scheduled</div>
+              <div className="text-sm text-primary-foreground/80">Home Visit Consultation</div>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold text-accent mb-1">100%</div>

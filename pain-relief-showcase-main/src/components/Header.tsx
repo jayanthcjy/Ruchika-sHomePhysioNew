@@ -34,7 +34,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <img src={clinicLogo} alt="Physio Clinic" className="h-10 w-auto" />
+            <img src={clinicLogo} alt="Dr. Ruchika's Physiotherapy & Rehabilitation" className="h-10 w-auto" />
           </div>
 
           {/* Desktop Navigation */}
@@ -50,10 +50,14 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Appointment Button */}
+          {/* WhatsApp Appointment Button */}
           <div className="hidden md:block">
-            <Button variant="accent" size="lg">
-              Book Appointment
+            <Button 
+              variant="accent" 
+              size="lg"
+              onClick={() => window.open(`https://wa.me/918600970446`, '_blank')}
+            >
+              Book on WhatsApp
             </Button>
           </div>
 
@@ -83,8 +87,12 @@ const Header = () => {
                 </a>
               ))}
               <div className="px-4 pt-2">
-                <Button variant="accent" className="w-full">
-                  Book Appointment
+                <Button 
+                  variant="accent" 
+                  className="w-full"
+                  onClick={() => window.open(`https://wa.me/918600970446`, '_blank')}
+                >
+                  Book on WhatsApp
                 </Button>
               </div>
             </nav>

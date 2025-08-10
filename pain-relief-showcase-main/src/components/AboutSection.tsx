@@ -24,7 +24,7 @@ const AboutSection = () => {
           {/* Right - Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h3 className="text-lg font-semibold text-primary">Physiotherapist in Mulund</h3>
+              <h3 className="text-lg font-semibold text-primary">Physiotherapist in Mumbai</h3>
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground">
                 Best Physiotherapy Clinic in Mumbai
               </h2>

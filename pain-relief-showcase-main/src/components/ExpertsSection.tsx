@@ -10,43 +10,43 @@ const ExpertsSection = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground">
-                Meet Our <span className="text-primary">Expert Team</span>
+                Meet <span className="text-primary">Dr. Ruchika</span>
               </h2>
               <p className="text-lg text-muted-foreground">
-                Our team of certified physiotherapists brings years of experience and 
-                specialized training to provide you with the highest quality care. We stay 
-                current with the latest research and techniques in physiotherapy.
+                Dr. Ruchika brings years of experience and specialized training in physiotherapy, 
+                providing high-quality care directly at your doorstep. Her expertise and dedication 
+                ensure you receive the best possible treatment in the comfort of your home.
               </p>
             </div>
 
             <div className="space-y-6">
               <div className="bg-gradient-light p-6 rounded-2xl border border-border">
                 <h3 className="font-semibold text-foreground mb-2">
-                  Certified Professionals
+                  Professional Excellence
                 </h3>
                 <p className="text-muted-foreground text-sm">
-                  All our physiotherapists are licensed and certified with ongoing 
-                  education in the latest treatment methodologies.
+                  Dr. Ruchika is a licensed physiotherapist who continuously updates her 
+                  knowledge with the latest treatment methodologies and techniques.
                 </p>
               </div>
 
               <div className="bg-gradient-light p-6 rounded-2xl border border-border">
                 <h3 className="font-semibold text-foreground mb-2">
-                  Personalized Approach
+                  Home Visit Specialist
                 </h3>
                 <p className="text-muted-foreground text-sm">
-                  We believe every patient is unique. Our treatment plans are 
-                  customized to your specific condition and recovery goals.
+                  Specializing in home physiotherapy, Dr. Ruchika brings personalized 
+                  treatment plans directly to your home, ensuring comfort and convenience.
                 </p>
               </div>
 
               <div className="bg-gradient-light p-6 rounded-2xl border border-border">
                 <h3 className="font-semibold text-foreground mb-2">
-                  Evidence-Based Care
+                  Evidence-Based Treatment
                 </h3>
                 <p className="text-muted-foreground text-sm">
-                  Our treatments are based on the latest scientific research and 
-                  proven methodologies for optimal patient outcomes.
+                  All treatments are based on the latest scientific research and proven 
+                  methodologies, adapted for effective home-based care.
                 </p>
               </div>
             </div>

@@ -47,13 +47,14 @@ const TestimonialsSection = () => {
           </p>
         </div>
 
-        <div className="flex overflow-x-auto space-x-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:space-x-0 md:gap-8 max-w-6xl mx-auto pb-4 snap-x snap-mandatory">
-          {testimonials.map((testimonial) => (
-            <div
-              key={testimonial.id}
-              className="bg-card p-8 rounded-2xl shadow-lg border border-border relative min-w-[80%] md:min-w-0 snap-center"
-            >
-              <div className="flex justify-between items-start">
+        <div className="relative w-full overflow-hidden">
+          <div className="flex animate-scroll">
+            {[...testimonials, ...testimonials].map((testimonial, index) => (
+              <div
+                key={`${testimonial.id}-${index}`}
+                className="bg-card p-8 rounded-2xl shadow-lg border border-border relative min-w-[80%] md:min-w-[45%] lg:min-w-[30%] mx-4"
+              >
+                <div className="flex justify-between items-start">
                 <div>
                   <h4 className="font-semibold text-foreground">
                     {testimonial.name}
@@ -78,7 +79,8 @@ const TestimonialsSection = () => {
 
               </div>
             </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -17,12 +17,21 @@ const CTABanner = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="accent" size="lg" className="text-lg px-8 py-6">
-              Contact Us Today
-            </Button>
+            <a href="https://wa.me/918600970446" target="_blank" rel="noopener noreferrer">
+              <Button variant="accent" size="lg" className="text-lg px-8 py-6">
+                Contact Us Today
+              </Button>
+            </a>
             <div className="text-primary-foreground/60 text-sm">
               or call us at{" "}
-              <a href="tel:+919876543210" className="text-accent font-semibold hover:underline">
+              <a 
+                href="tel:+918600970446" 
+                className="text-accent font-semibold hover:underline"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open("tel:+918600970446");
+                }}
+              >
                 +91 86009 70446
               </a>
             </div>

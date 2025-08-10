@@ -27,23 +27,25 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 py-12">
           {/* Logo and Contact Info */}
           <div className="space-y-6">
-            <img src={clinicLogo} alt="Physio Clinic" className="h-12 w-auto" />
+            <img src={clinicLogo} alt="Physio Clinic" className="h-16 w-auto" />
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-accent" />
-                <span className="hover:text-accent transition-colors">
-                  Contact via WhatsApp
-                </span>
+                <a href="mailto:ruchikasphysio@gmail.com" className="hover:text-accent transition-colors">
+                  ruchikasphysio@gmail.com
+                </a>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-accent" />
                 <a 
-                  href="https://wa.me/918600970446" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                  href="tel:+918600970446"
                   className="hover:text-accent transition-colors"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open("tel:+918600970446");
+                  }}
                 >
-                  +91 86009 70446 (WhatsApp)
+                  +91 86009 70446
                 </a>
               </div>
               <div className="flex items-start gap-3">

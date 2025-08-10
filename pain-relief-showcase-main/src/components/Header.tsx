@@ -31,10 +31,10 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-center h-16">
           {/* Logo */}
-          <div className="flex items-center">
-            <img src={clinicLogo} alt="Dr. Ruchika's Physiotherapy & Rehabilitation" className="h-10 w-auto" />
+          <div className="flex items-center mx-auto">
+            <img src={clinicLogo} alt="Dr. Ruchika's Physiotherapy & Rehabilitation" className="h-16 w-auto" />
           </div>
 
           {/* Desktop Navigation */}
